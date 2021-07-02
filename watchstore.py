@@ -4,8 +4,6 @@ from flask import request
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
-watches = [{"id":"001", "count":0, "price": 200}]
-watches = []
 class watch:
     def __init__(self, id, count, price, disc_num = None, disc_price = None):
         self.id = id
